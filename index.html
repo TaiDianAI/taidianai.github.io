@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" itemscope itemtype="http://schema.org/WebPage">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>网站首页</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  .navbar {
+    background: linear-gradient(to right, #1e3a8a, #1e87ff);
+    padding: 10px 0;
+  }
+  .navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  .navbar a:hover {
+    background: linear-gradient(to right, #ff6384, #ff7f50);
+    color: black;
+  }
+  .main-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  .box {
+    flex: 1;
+    margin: 0 10px;
+    padding: 20px;
+    background: linear-gradient(to right, #6a85b6, #b8c6d8);
+    box-sizing: border-box;
+  }
+  .footer {
+    background: linear-gradient(to right, #ff6384, #ff7f50);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+.company-intro h2, .ai-models h2, .assistants h2 {
+    color: #ff9f1c; /* 橙色渐变色的起始颜色 */
+  }
+  .navbar {
+    background: #333; /* 导航栏背景颜色调整为深灰色 */
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navbar img {
+    max-height: 50px; /* Logo图片最大高度 */
+  }
+  .navbar a.login-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #ff9f1c; /* 登录按钮背景颜色为橙色渐变色的起始颜色 */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  .navbar a.login-btn:hover {
+    background-color: #ff6300; /* 登录按钮鼠标悬停时的背景颜色 */
+  }
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <img src="./pictures/logo.png" alt="公司Logo"> <!-- 替换为实际的Logo图片路径 -->
+  <a href="./Login/login_page.html" class="login-btn" target="_blank">登录</a> <!-- 登录按钮，点击后跳转到登录页面 -->
+</div>
+
+<main class="main-content">
+  <section class="box company-intro">
+    <h2>TDAI简介</h2>
+    <p>这里是TDAI简介的内容。</p>
+  </section>
+  
+  <section class="box ai-models">
+    <h2>AI大模型官方链接</h2>
+    <article>
+      <p><a href="https://openai.com/blog/chatgpt/" target="_blank">ChatGPT</a></p>
+      <p><a href="https://chatglm.cn/main/alltoolsdetail" target="_blank">智谱清言</a></p>
+      <p><a href="https://yiyan.baidu.com/" target="_blank">文心一言</a></p>
+      <p><a href="https://tongyi.aliyun.com/qianwen/" target="_blank">通义千问</a></p>
+      <p><a href="https://kimi.moonshot.cn/" target="_blank">Kimi Chat</a></p>
+    </article>
+  </section>
+  
+  <section class="box assistants">
+    <h2>TDAI智能助手</h2>
+    <article>
+      <p><a href="./reminder.html" target="_blank">智能助手一</a></p>
+      <p><a href="./reminder.html" target="_blank">智能助手二</a></p>
+      <p><a href="./reminder.html" target="_blank">智能助手三</a></p>
+    </article>
+  </section>
+</main>
+
+<footer class="footer">
+  <p>版权所有 &copy; 2024</p>
+</footer>
+
+</body>
+</html>
